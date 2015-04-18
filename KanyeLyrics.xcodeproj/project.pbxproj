@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782336CD1AE302F000CA0AEB /* globe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782336CC1AE302F000CA0AEB /* globe@2x.png */; };
+		782336D11AE3050400CA0AEB /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782336D01AE3050400CA0AEB /* delete@2x.png */; };
 		78F7D2B61AE2E30000D15BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2B51AE2E30000D15BD5 /* AppDelegate.swift */; };
 		78F7D2B81AE2E30000D15BD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2B71AE2E30000D15BD5 /* ViewController.swift */; };
 		78F7D2BB1AE2E30000D15BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F7D2B91AE2E30000D15BD5 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		78F7D2CC1AE2E30000D15BD5 /* KanyeLyricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2CB1AE2E30000D15BD5 /* KanyeLyricsTests.swift */; };
 		78F7D2DE1AE2E32F00D15BD5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2DD1AE2E32F00D15BD5 /* KeyboardViewController.swift */; };
 		78F7D2E11AE2E32F00D15BD5 /* keyboardExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 78F7D2D91AE2E32F00D15BD5 /* keyboardExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		78F7D2EB1AE2F04000D15BD5 /* keyboardMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F7D2EA1AE2F04000D15BD5 /* keyboardMainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		782336CC1AE302F000CA0AEB /* globe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@2x.png"; sourceTree = "<group>"; };
+		782336D01AE3050400CA0AEB /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
 		78F7D2B01AE2E30000D15BD5 /* KanyeLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanyeLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F7D2B41AE2E30000D15BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78F7D2B51AE2E30000D15BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		78F7D2D91AE2E32F00D15BD5 /* keyboardExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboardExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F7D2DC1AE2E32F00D15BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78F7D2DD1AE2E32F00D15BD5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		78F7D2EA1AE2F04000D15BD5 /* keyboardMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = keyboardMainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		782336CB1AE302F000CA0AEB /* image */ = {
+			isa = PBXGroup;
+			children = (
+				782336CC1AE302F000CA0AEB /* globe@2x.png */,
+				782336D01AE3050400CA0AEB /* delete@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		78F7D2A71AE2E30000D15BD5 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				78F7D2DD1AE2E32F00D15BD5 /* KeyboardViewController.swift */,
+				78F7D2EA1AE2F04000D15BD5 /* keyboardMainView.xib */,
+				782336CB1AE302F000CA0AEB /* image */,
 				78F7D2DB1AE2E32F00D15BD5 /* Supporting Files */,
 			);
 			path = keyboardExt;
@@ -284,6 +301,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782336D11AE3050400CA0AEB /* delete@2x.png in Resources */,
+				782336CD1AE302F000CA0AEB /* globe@2x.png in Resources */,
+				78F7D2EB1AE2F04000D15BD5 /* keyboardMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +548,7 @@
 				78F7D2D11AE2E30000D15BD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78F7D2D21AE2E30000D15BD5 /* Build configuration list for PBXNativeTarget "KanyeLyricsTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +557,7 @@
 				78F7D2D41AE2E30000D15BD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78F7D2E21AE2E32F00D15BD5 /* Build configuration list for PBXNativeTarget "keyboardExt" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +566,7 @@
 				78F7D2E41AE2E32F00D15BD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

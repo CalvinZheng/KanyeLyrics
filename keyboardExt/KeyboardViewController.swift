@@ -10,53 +10,54 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
 
-    @IBOutlet var nextKeyboardButton: UIButton!
+    var keyboardMainView: UIView!
 
-    override func updateViewConstraints() {
+    // MARK: - override
+    
+    override func updateViewConstraints()
+    {
         super.updateViewConstraints()
-    
-        // Add custom view sizing constraints here
     }
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-    
-        // Perform custom UI setup here
-        self.nextKeyboardButton = UIButton.buttonWithType(.System) as! UIButton
-    
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.setTranslatesAutoresizingMaskIntoConstraints(false)
-    
-        self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         
-        self.view.addSubview(self.nextKeyboardButton)
-    
-        var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
-        var nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-        self.view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
+        self.keyboardMainView = NSBundle.mainBundle().loadNibNamed("keyboardMainView", owner: self, options: nil)[0] as! UIView
+        self.keyboardMainView.frame = self.view.bounds
+        self.keyboardMainView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        self.view.addSubview(self.keyboardMainView)
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated
     }
 
-    override func textWillChange(textInput: UITextInput) {
-        // The app is about to change the document's contents. Perform any preparation here.
+    override func textWillChange(textInput: UITextInput)
+    {
     }
 
-    override func textDidChange(textInput: UITextInput) {
-        // The app has just changed the document's contents, the document context has been updated.
+    override func textDidChange(textInput: UITextInput)
+    {
+    }
     
-        var textColor: UIColor
-        var proxy = self.textDocumentProxy as! UITextDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
-            textColor = UIColor.whiteColor()
-        } else {
-            textColor = UIColor.blackColor()
-        }
-        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+    // MARK: - func
+    
+    func textDocProxy() -> UITextDocumentProxy
+    {
+        return self.textDocumentProxy as! UITextDocumentProxy
+    }
+    
+    // MARK: - actions
+    
+    @IBAction func deleteTapped(sender: UIButton)
+    {
+        self.textDocProxy().deleteBackward()
     }
 
+    @IBAction func globeTapped(sender: UIButton)
+    {
+        self.advanceToNextInputMode()
+    }
 }

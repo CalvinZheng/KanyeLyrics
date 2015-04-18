@@ -34,6 +34,20 @@
                ReferencedContainer = "container:KanyeLyrics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "78F7D2D81AE2E32F00D15BD5"
+               BuildableName = "keyboardExt.appex"
+               BlueprintName = "keyboardExt"
+               ReferencedContainer = "container:KanyeLyrics.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
