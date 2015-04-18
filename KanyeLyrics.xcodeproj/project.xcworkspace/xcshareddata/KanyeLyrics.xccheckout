@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F2D94F5B-F9EE-46CE-8F8A-F8A1CBDEAFA3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KanyeLyrics</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FB9AD525397BF4E12F4499635A390FF169222051</key>
+		<string>https://github.com/CalvinZheng/KanyeLyrics.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KanyeLyrics.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FB9AD525397BF4E12F4499635A390FF169222051</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CalvinZheng/KanyeLyrics.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FB9AD525397BF4E12F4499635A390FF169222051</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FB9AD525397BF4E12F4499635A390FF169222051</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KanyeLyrics</string>
+		</dict>
+	</array>
+</dict>
+</plist>
