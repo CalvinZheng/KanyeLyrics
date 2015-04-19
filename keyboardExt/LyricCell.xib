@@ -15,8 +15,9 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGb-XN-PJD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                        <string key="text">Your love is my scriptureLet me into your encryption</string>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <string key="text">Your love is my scripture
+Let me into your encryption</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -28,6 +29,7 @@
                     <constraint firstItem="uGb-XN-PJD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c7M-xv-YEG"/>
                 </constraints>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
             <connections>
                 <outlet property="lyricLabel" destination="uGb-XN-PJD" id="J1G-Yn-iuW"/>
             </connections>

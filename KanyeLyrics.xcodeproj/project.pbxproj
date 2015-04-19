@@ -14,7 +14,6 @@
 		782336D71AE3213D00CA0AEB /* LyricCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782336D51AE3213D00CA0AEB /* LyricCell.xib */; };
 		782336D91AE3263800CA0AEB /* LyricsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782336D81AE3263800CA0AEB /* LyricsDatabase.swift */; };
 		782336DB1AE327A600CA0AEB /* Lyrics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 782336DA1AE327A600CA0AEB /* Lyrics.plist */; };
-		782336DD1AE3390600CA0AEB /* KeyboardMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782336DC1AE3390600CA0AEB /* KeyboardMainView.swift */; };
 		78F7D2B61AE2E30000D15BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2B51AE2E30000D15BD5 /* AppDelegate.swift */; };
 		78F7D2B81AE2E30000D15BD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2B71AE2E30000D15BD5 /* ViewController.swift */; };
 		78F7D2BB1AE2E30000D15BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F7D2B91AE2E30000D15BD5 /* Main.storyboard */; };
@@ -65,7 +64,8 @@
 		782336D51AE3213D00CA0AEB /* LyricCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyricCell.xib; sourceTree = "<group>"; };
 		782336D81AE3263800CA0AEB /* LyricsDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsDatabase.swift; sourceTree = "<group>"; };
 		782336DA1AE327A600CA0AEB /* Lyrics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lyrics.plist; sourceTree = "<group>"; };
-		782336DC1AE3390600CA0AEB /* KeyboardMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardMainView.swift; sourceTree = "<group>"; };
+		78DA9A7A1AE37035007F23F7 /* KanyeLyrics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KanyeLyrics.entitlements; sourceTree = "<group>"; };
+		78DA9A7B1AE37056007F23F7 /* keyboardExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = keyboardExt.entitlements; sourceTree = "<group>"; };
 		78F7D2B01AE2E30000D15BD5 /* KanyeLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanyeLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F7D2B41AE2E30000D15BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78F7D2B51AE2E30000D15BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +139,7 @@
 		78F7D2B21AE2E30000D15BD5 /* KanyeLyrics */ = {
 			isa = PBXGroup;
 			children = (
+				78DA9A7A1AE37035007F23F7 /* KanyeLyrics.entitlements */,
 				78F7D2B51AE2E30000D15BD5 /* AppDelegate.swift */,
 				78F7D2B71AE2E30000D15BD5 /* ViewController.swift */,
 				78F7D2B91AE2E30000D15BD5 /* Main.storyboard */,
@@ -177,8 +178,8 @@
 		78F7D2DA1AE2E32F00D15BD5 /* keyboardExt */ = {
 			isa = PBXGroup;
 			children = (
+				78DA9A7B1AE37056007F23F7 /* keyboardExt.entitlements */,
 				78F7D2DD1AE2E32F00D15BD5 /* KeyboardViewController.swift */,
-				782336DC1AE3390600CA0AEB /* KeyboardMainView.swift */,
 				78F7D2EA1AE2F04000D15BD5 /* keyboardMainView.xib */,
 				782336D21AE3191A00CA0AEB /* LyricsTableController.swift */,
 				782336D41AE3213D00CA0AEB /* LyricCell.swift */,
@@ -267,6 +268,12 @@
 				TargetAttributes = {
 					78F7D2AF1AE2E30000D15BD5 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 52WW63A9X8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					78F7D2C41AE2E30000D15BD5 = {
 						CreatedOnToolsVersion = 6.3;
@@ -274,6 +281,12 @@
 					};
 					78F7D2D81AE2E32F00D15BD5 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 52WW63A9X8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -354,7 +367,6 @@
 				782336D31AE3191A00CA0AEB /* LyricsTableController.swift in Sources */,
 				78F7D2DE1AE2E32F00D15BD5 /* KeyboardViewController.swift in Sources */,
 				782336D91AE3263800CA0AEB /* LyricsDatabase.swift in Sources */,
-				782336DD1AE3390600CA0AEB /* KeyboardMainView.swift in Sources */,
 				782336D61AE3213D00CA0AEB /* LyricCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,9 +491,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KanyeLyrics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -489,9 +504,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KanyeLyrics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -532,6 +550,8 @@
 		78F7D2E31AE2E32F00D15BD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -539,6 +559,7 @@
 				INFOPLIST_FILE = keyboardExt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -546,9 +567,12 @@
 		78F7D2E41AE2E32F00D15BD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = keyboardExt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

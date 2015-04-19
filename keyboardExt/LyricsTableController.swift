@@ -24,19 +24,20 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return LyricsDatabase.sharedInstance.selectedGroup().count
+        return LyricsDatabase.sharedInstance.selectedGroupContent().count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let aCell = NSBundle.mainBundle().loadNibNamed("LyricCell", owner: self, options: nil)[0] as! LyricCell
         aCell.lyricLabel.text = LyricsDatabase.sharedInstance.lyric(indexPath.row)
+        aCell.setSelected(false, animated: false)
         return aCell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        tableView.cellForRowAtIndexPath(indexPath)?.setSelected(false, animated: true)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.delegate?.lyricClicked(LyricsDatabase.sharedInstance.lyric(indexPath.row))
     }
 }

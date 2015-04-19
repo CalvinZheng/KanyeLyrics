@@ -12,6 +12,7 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
 
     var keyboardMainView: UIView!
     var lyricsTableController: LyricsTableController!
+    var lastInputString: String?
 
     @IBOutlet var lyricsTableView: UITableView!
     
@@ -55,8 +56,20 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
     
     func lyricClicked(lyric: String?)
     {
-        UIDevice.currentDevice().playInputClick()
+        if let last = self.lastInputString, context = self.textDocProxy().documentContextBeforeInput
+        {
+            if context.hasSuffix(last)
+            {
+                for i in 1...count(last)
+                {
+                    self.textDocProxy().deleteBackward()
+                }
+            }
+        }
+        
         self.textDocProxy().insertText(lyric!)
+        
+        self.lastInputString = lyric
     }
     
     func textDocProxy() -> UITextDocumentProxy
@@ -66,9 +79,28 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
     
     // MARK: - actions
     
+    var timer: NSTimer?
+    
     @IBAction func deleteTapped(sender: UIButton)
     {
         self.textDocProxy().deleteBackward()
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "deleteHold:", userInfo: nil, repeats: false)
+    }
+    
+    func deleteHold(timer: NSTimer)
+    {
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "deleteHoldOn:", userInfo: nil, repeats: true)
+    }
+    
+    func deleteHoldOn(timer: NSTimer)
+    {
+        self.textDocProxy().deleteBackward()
+    }
+    
+    @IBAction func deleteReleased(sender: UIButton)
+    {
+        self.timer?.invalidate()
+        self.timer = nil
     }
 
     @IBAction func globeTapped(sender: UIButton)

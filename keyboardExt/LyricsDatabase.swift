@@ -10,34 +10,80 @@ import UIKit
 
 class LyricsDatabase: NSObject
 {
-    var dataDict: NSDictionary!
+    var dataArray: [[String:AnyObject]]!
     var selectedGroupIndex: Int!
     static let sharedInstance = LyricsDatabase()
     
     override init()
     {
-        self.dataDict = NSDictionary(contentsOfFile: NSBundle.mainBundle().pathForResource("Lyrics", ofType: "plist")!)
+        super.init()
+        
+        if let path = NSBundle.mainBundle().pathForResource("Lyrics", ofType: "plist"), data = NSArray(contentsOfFile: path) as? [[String:AnyObject]]
+        {
+            self.dataArray = data
+        }
+        else
+        {
+            assertionFailure("Lyrics.plist format error!!!")
+        }
+        
         self.selectedGroupIndex = NSUserDefaults.standardUserDefaults().integerForKey("SelectedGroup")
+        if self.selectedGroupIndex >= self.dataArray.count
+        {
+            self.setSelectedGroup(0)
+        }
     }
     
     func setSelectedGroup(selectedGroup: Int)
     {
-        self.selectedGroupIndex = selectedGroup
-        NSUserDefaults.standardUserDefaults().setInteger(selectedGroup, forKey: "SelectedGroup")
+        if self.selectedGroupIndex < self.dataArray.count
+        {
+            self.selectedGroupIndex = selectedGroup
+            NSUserDefaults.standardUserDefaults().setInteger(selectedGroup, forKey: "SelectedGroup")
+        }
     }
     
-    func selectedGroup() -> NSDictionary
+    func titleForGroup(index: Int) -> String
     {
-        return self.dataDict[self.dataDict.allKeys[self.selectedGroupIndex] as! String] as! NSDictionary
+        if let aString = self.dataArray[index]["Category"] as? String
+        {
+            return aString
+        }
+        
+        assertionFailure("Lyrics.plist format error!!!")
+        return ""
     }
     
-    func lyric(indexInSelectedGroup: Int) -> String?
+    func selectedGroupContent() -> [[String:String]]
     {
-        return self.selectedGroup().allKeys[indexInSelectedGroup] as? String
+        if let content = self.dataArray[self.selectedGroupIndex]["Content"] as? [[String:String]]
+        {
+            return content
+        }
+        
+        assertionFailure("Lyrics.plist format error!!!")
+        return []
     }
     
-    func lyricDetail(indexInSelectedGroup: Int) -> String?
+    func lyric(indexInSelectedGroup: Int) -> String
     {
-        return self.selectedGroup()[self.selectedGroup().allKeys[indexInSelectedGroup] as! String] as? String
+        if let lyric = self.selectedGroupContent()[indexInSelectedGroup]["Lyric"]
+        {
+            return lyric
+        }
+        
+        assertionFailure("Lyrics.plist format error!!!")
+        return ""
+    }
+    
+    func lyricDetail(indexInSelectedGroup: Int) -> String
+    {
+        if let lyricDetail = self.selectedGroupContent()[indexInSelectedGroup]["Detail"]
+        {
+            return lyricDetail
+        }
+        
+        assertionFailure("Lyrics.plist format error!!!")
+        return ""
     }
 }

@@ -10,7 +10,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KeyboardMainView" customModule="keyboardExt" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -42,7 +42,9 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="deleteTapped:" destination="-1" eventType="touchUpInside" id="eXV-TS-Ww7"/>
+                        <action selector="deleteReleased:" destination="-1" eventType="touchDragExit" id="5RX-pf-YS4"/>
+                        <action selector="deleteReleased:" destination="-1" eventType="touchUpInside" id="LPv-5W-teW"/>
+                        <action selector="deleteTapped:" destination="-1" eventType="touchDown" id="t9I-27-Hcr"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1s-1h-qRu">
