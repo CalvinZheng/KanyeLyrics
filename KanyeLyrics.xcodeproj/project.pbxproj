@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		782336CD1AE302F000CA0AEB /* globe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782336CC1AE302F000CA0AEB /* globe@2x.png */; };
 		782336D11AE3050400CA0AEB /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 782336D01AE3050400CA0AEB /* delete@2x.png */; };
+		782336D31AE3191A00CA0AEB /* LyricsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782336D21AE3191A00CA0AEB /* LyricsTableController.swift */; };
+		782336D61AE3213D00CA0AEB /* LyricCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782336D41AE3213D00CA0AEB /* LyricCell.swift */; };
+		782336D71AE3213D00CA0AEB /* LyricCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782336D51AE3213D00CA0AEB /* LyricCell.xib */; };
+		782336D91AE3263800CA0AEB /* LyricsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782336D81AE3263800CA0AEB /* LyricsDatabase.swift */; };
+		782336DB1AE327A600CA0AEB /* Lyrics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 782336DA1AE327A600CA0AEB /* Lyrics.plist */; };
+		782336DD1AE3390600CA0AEB /* KeyboardMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782336DC1AE3390600CA0AEB /* KeyboardMainView.swift */; };
 		78F7D2B61AE2E30000D15BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2B51AE2E30000D15BD5 /* AppDelegate.swift */; };
 		78F7D2B81AE2E30000D15BD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D2B71AE2E30000D15BD5 /* ViewController.swift */; };
 		78F7D2BB1AE2E30000D15BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F7D2B91AE2E30000D15BD5 /* Main.storyboard */; };
@@ -54,6 +60,12 @@
 /* Begin PBXFileReference section */
 		782336CC1AE302F000CA0AEB /* globe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@2x.png"; sourceTree = "<group>"; };
 		782336D01AE3050400CA0AEB /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		782336D21AE3191A00CA0AEB /* LyricsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsTableController.swift; sourceTree = "<group>"; };
+		782336D41AE3213D00CA0AEB /* LyricCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricCell.swift; sourceTree = "<group>"; };
+		782336D51AE3213D00CA0AEB /* LyricCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LyricCell.xib; sourceTree = "<group>"; };
+		782336D81AE3263800CA0AEB /* LyricsDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyricsDatabase.swift; sourceTree = "<group>"; };
+		782336DA1AE327A600CA0AEB /* Lyrics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lyrics.plist; sourceTree = "<group>"; };
+		782336DC1AE3390600CA0AEB /* KeyboardMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardMainView.swift; sourceTree = "<group>"; };
 		78F7D2B01AE2E30000D15BD5 /* KanyeLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanyeLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F7D2B41AE2E30000D15BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78F7D2B51AE2E30000D15BD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,7 +178,13 @@
 			isa = PBXGroup;
 			children = (
 				78F7D2DD1AE2E32F00D15BD5 /* KeyboardViewController.swift */,
+				782336DC1AE3390600CA0AEB /* KeyboardMainView.swift */,
 				78F7D2EA1AE2F04000D15BD5 /* keyboardMainView.xib */,
+				782336D21AE3191A00CA0AEB /* LyricsTableController.swift */,
+				782336D41AE3213D00CA0AEB /* LyricCell.swift */,
+				782336D51AE3213D00CA0AEB /* LyricCell.xib */,
+				782336D81AE3263800CA0AEB /* LyricsDatabase.swift */,
+				782336DA1AE327A600CA0AEB /* Lyrics.plist */,
 				782336CB1AE302F000CA0AEB /* image */,
 				78F7D2DB1AE2E32F00D15BD5 /* Supporting Files */,
 			);
@@ -302,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				782336D11AE3050400CA0AEB /* delete@2x.png in Resources */,
+				782336D71AE3213D00CA0AEB /* LyricCell.xib in Resources */,
+				782336DB1AE327A600CA0AEB /* Lyrics.plist in Resources */,
 				782336CD1AE302F000CA0AEB /* globe@2x.png in Resources */,
 				78F7D2EB1AE2F04000D15BD5 /* keyboardMainView.xib in Resources */,
 			);
@@ -331,7 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782336D31AE3191A00CA0AEB /* LyricsTableController.swift in Sources */,
 				78F7D2DE1AE2E32F00D15BD5 /* KeyboardViewController.swift in Sources */,
+				782336D91AE3263800CA0AEB /* LyricsDatabase.swift in Sources */,
+				782336DD1AE3390600CA0AEB /* KeyboardMainView.swift in Sources */,
+				782336D61AE3213D00CA0AEB /* LyricCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

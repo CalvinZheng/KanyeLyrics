@@ -8,10 +8,13 @@
 
 import UIKit
 
-class KeyboardViewController: UIInputViewController {
+class KeyboardViewController: UIInputViewController, LyricsTableControllerDelegate {
 
     var keyboardMainView: UIView!
+    var lyricsTableController: LyricsTableController!
 
+    @IBOutlet var lyricsTableView: UITableView!
+    
     // MARK: - override
     
     override func updateViewConstraints()
@@ -23,10 +26,16 @@ class KeyboardViewController: UIInputViewController {
     {
         super.viewDidLoad()
         
+        self.lyricsTableController = LyricsTableController()
+        self.lyricsTableController.delegate = self
+        
         self.keyboardMainView = NSBundle.mainBundle().loadNibNamed("keyboardMainView", owner: self, options: nil)[0] as! UIView
         self.keyboardMainView.frame = self.view.bounds
         self.keyboardMainView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
         self.view.addSubview(self.keyboardMainView)
+        
+        self.lyricsTableView.delegate = self.lyricsTableController
+        self.lyricsTableView.dataSource = self.lyricsTableController
     }
 
     override func didReceiveMemoryWarning()
@@ -43,6 +52,12 @@ class KeyboardViewController: UIInputViewController {
     }
     
     // MARK: - func
+    
+    func lyricClicked(lyric: String?)
+    {
+        UIDevice.currentDevice().playInputClick()
+        self.textDocProxy().insertText(lyric!)
+    }
     
     func textDocProxy() -> UITextDocumentProxy
     {
