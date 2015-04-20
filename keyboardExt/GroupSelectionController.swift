@@ -27,7 +27,7 @@ class GroupSelectionController: NSObject, GroupTitleViewDelegate
             if let aTitleView = NSBundle.mainBundle().loadNibNamed("GroupTitleView", owner: self, options: nil)[0] as? GroupTitleView
             {
                 aTitleView.titleButton.setTitle(LyricsDatabase.sharedInstance.titleForGroup(i), forState: UIControlState.Normal)
-                aTitleView.autoresizingMask = UIViewAutoresizing.None
+                aTitleView.backgroundColor = LyricsDatabase.sharedInstance.colorForGroup(i)
                 aTitleView.delegate = self
                 
                 views.append(aTitleView)

@@ -10,7 +10,8 @@ import UIKit
 
 protocol LyricsTableControllerDelegate
 {
-    func lyricClicked(lyric: String?)
+    func lyricClicked(lyric: String)
+    func lyricDetailClicked(detail: String)
 }
 
 class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelegate, NSObjectProtocol
@@ -23,6 +24,7 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
     {
         self.expandedIndex = nil
         self.tableView?.reloadData()
+        self.tableView?.contentOffset = CGPoint.zeroPoint
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
@@ -106,7 +108,7 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
             }
             else if indexPath.row == index+1
             {
-                self.delegate?.lyricClicked(LyricsDatabase.sharedInstance.lyricDetail(index))
+                self.delegate?.lyricDetailClicked(LyricsDatabase.sharedInstance.lyricDetail(index))
             }
             else
             {

@@ -24,6 +24,7 @@
                 </tableView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUY-b1-jbp">
                     <rect key="frame" x="0.0" y="176" width="320" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" id="PdV-lY-VlU"/>
                     </constraints>

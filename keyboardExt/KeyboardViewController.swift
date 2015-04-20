@@ -11,7 +11,8 @@ import UIKit
 class KeyboardViewController: UIInputViewController, LyricsTableControllerDelegate, GroupTitleViewDelegate, GroupSelectionControllerDelegate {
 
     var keyboardMainView: UIView!
-    var lastInputString: String?
+    var lastLyricString: String = ""
+    var lastDetailString: String = ""
     var groupTitleView: GroupTitleView!
     var groupSelectionMode: Bool!
     
@@ -40,6 +41,17 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
     override func updateViewConstraints()
     {
         super.updateViewConstraints()
+        
+        if self.groupSelectionMode == false
+        {
+            self.scrollViewTopConstraint.active = false
+            self.scrollViewHeightConstraint.active = true
+        }
+        else
+        {
+            self.scrollViewTopConstraint.active = true
+            self.scrollViewHeightConstraint.active = false
+        }
     }
 
     override func viewDidLoad()
@@ -59,6 +71,7 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
         
         self.groupTitleView = NSBundle.mainBundle().loadNibNamed("GroupTitleView", owner: self, options: nil)[0] as! GroupTitleView
         self.groupTitleView.titleButton.setTitle(LyricsDatabase.sharedInstance.titleForSelectedGroup(), forState: UIControlState.Normal)
+        self.groupTitleView.backgroundColor = LyricsDatabase.sharedInstance.colorForGroup(LyricsDatabase.sharedInstance.selectedGroupIndex)
         self.groupTitleView.frame = self.titleContainerView.bounds
         self.groupTitleView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
         self.titleContainerView.addSubview(self.groupTitleView)
@@ -67,38 +80,55 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
         
         self.groupSelectionController.scrollView = self.groupSelectionScrollView
     }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
-
-    override func textWillChange(textInput: UITextInput)
-    {
-    }
-
-    override func textDidChange(textInput: UITextInput)
-    {
-    }
     
     // MARK: - func
     
-    func lyricClicked(lyric: String?)
+    func lyricClicked(lyric: String)
     {
-        if let last = self.lastInputString, context = self.textDocProxy().documentContextBeforeInput
+        if let context = self.textDocProxy().documentContextBeforeInput
         {
-            if context.hasSuffix(last)
+            if context.hasSuffix(self.lastLyricString) || self.lastLyricString.hasSuffix(context)
             {
-                for i in 1...count(last)
+                for i in 1...count(self.lastLyricString)
+                {
+                    self.textDocProxy().deleteBackward()
+                }
+            }
+            else
+            {
+                let lastLongString = self.lastLyricString + "\n" + self.lastDetailString
+                if context.hasSuffix(lastLongString) || lastLongString.hasSuffix(context)
+                {
+                    for i in 1...count(lastLongString)
+                    {
+                        self.textDocProxy().deleteBackward()
+                    }
+                }
+            }
+        }
+        
+        self.textDocProxy().insertText(lyric)
+        
+        self.lastLyricString = lyric
+        self.lastDetailString = ""
+    }
+    
+    func lyricDetailClicked(detail: String)
+    {
+        if let context = self.textDocProxy().documentContextBeforeInput
+        {
+            if context.hasSuffix(self.lastDetailString) || self.lastDetailString.hasSuffix(context)
+            {
+                for i in 1...count("\n"+self.lastDetailString)
                 {
                     self.textDocProxy().deleteBackward()
                 }
             }
         }
         
-        self.textDocProxy().insertText(lyric!)
+        self.textDocProxy().insertText("\n"+detail)
         
-        self.lastInputString = lyric
+        self.lastDetailString = detail
     }
     
     func textDocProxy() -> UITextDocumentProxy
@@ -118,7 +148,7 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
     
     func deleteHold(timer: NSTimer)
     {
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "deleteHoldOn:", userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.07, target: self, selector: "deleteHoldOn:", userInfo: nil, repeats: true)
     }
     
     func deleteHoldOn(timer: NSTimer)
@@ -143,8 +173,8 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
     {
         if self.groupSelectionMode == true
         {
-            self.scrollViewHeightConstraint.active = true
             self.scrollViewTopConstraint.active = false
+            self.scrollViewHeightConstraint.active = true
             self.lyricsTableView.hidden = false
             
             UIView.animateWithDuration(0.3, animations: { () -> Void in
@@ -184,6 +214,7 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
         
         UIView.animateWithDuration(0.3, animations: { () -> Void in
             self.view.layoutIfNeeded()
+            self.groupTitleView.backgroundColor = LyricsDatabase.sharedInstance.colorForGroup(LyricsDatabase.sharedInstance.selectedGroupIndex)
             },
             completion: { (finished) -> Void in
                 self.groupSelectionMode = false

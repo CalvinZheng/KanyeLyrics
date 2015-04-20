@@ -54,6 +54,19 @@ class LyricsDatabase: NSObject
         return ""
     }
     
+    func colorForGroup(index: Int) -> UIColor
+    {
+        if let colorDict = self.dataArray[index]["Color"] as? [String:Int], r = colorDict["R"], g = colorDict["G"], b = colorDict["B"]
+        {
+            return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1)
+        }
+        else
+        {
+            assertionFailure("ColorFormatError")
+            return UIColor.whiteColor()
+        }
+    }
+    
     func titleForSelectedGroup() -> String
     {
         return self.titleForGroup(self.selectedGroupIndex)

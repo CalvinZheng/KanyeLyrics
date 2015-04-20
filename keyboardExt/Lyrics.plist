@@ -44,6 +44,15 @@
 				<string>“Power” (Ft. Dwele) - Kanye West</string>
 			</dict>
 		</array>
+		<key>Color</key>
+		<dict>
+			<key>R</key>
+			<integer>255</integer>
+			<key>G</key>
+			<integer>0</integer>
+			<key>B</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<dict>
 		<key>Category</key>
@@ -86,222 +95,250 @@
 				<key>Detail</key>
 				<string>“Diamonds” Remix (Ft. Kanye West) - Rihanna</string>
 			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>Category</key>
-		<string>Straight Fire</string>
-		<key>Content</key>
-		<array>
 			<dict>
 				<key>Lyric</key>
-				<string>I just spent that on a necklace</string>
-				<key>Detail</key>
-				<string>“Can’t Tell Me Nothing” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I’d rather be a dick than a swallower</string>
-				<key>Detail</key>
-				<string>“New Slaves” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>No you’re not perfect but you’re not your mistakes</string>
-				<key>Detail</key>
-				<string>“Only One” (feat. Paul McCartney) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>How you gon’ be mad on vacation?</string>
-				<key>Detail</key>
-				<string>“Bound 2” (Ft. Charlie Wilson) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>No sins as long as there’s permission</string>
-				<key>Detail</key>
-				<string>“No Church in the Wild” (Feat. Frank Ocean &amp; Jay Z) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I don’t need pussy I’m on my own dick</string>
-				<key>Detail</key>
-				<string>“Power” (Ft. Dwele) - Kanye West</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>Category</key>
-		<string>Based</string>
-		<key>Content</key>
-		<array>
-			<dict>
-				<key>Lyric</key>
-				<string>Allow Myself to Introduce Myself</string>
-				<key>Detail</key>
-				<string>“The New Workout Plan” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I am a God</string>
-				<key>Detail</key>
-				<string>“I am a God” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>Hurry up with my damn croissants</string>
-				<key>Detail</key>
-				<string>“I am a God” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I still think I am the greatest</string>
+				<string>Nobody can tell me where I can and can’t go</string>
 				<key>Detail</key>
 				<string>-Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I don’t know what’s better gettin’ laid or gettin’ paid</string>
+				<string>I’d rather be a dick than a swallower.</string>
 				<key>Detail</key>
-				<string>“This Way” (Ft. Kanye West) - Dilated Peoples</string>
+				<string>“New Slaves” (Ft. Frank Ocean) - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>My style is sex in the shower, fresh as fuck</string>
+				<string>man I miss myself</string>
 				<key>Detail</key>
 				<string>“Diamonds” Remix (Ft. Kanye West) - Rihanna</string>
 			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>Category</key>
-		<string>Straight Fire</string>
-		<key>Content</key>
-		<array>
 			<dict>
 				<key>Lyric</key>
-				<string>I just spent that on a necklace</string>
+				<string>this is my day.</string>
 				<key>Detail</key>
 				<string>“Can’t Tell Me Nothing” - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I’d rather be a dick than a swallower</string>
-				<key>Detail</key>
-				<string>“New Slaves” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>No you’re not perfect but you’re not your mistakes</string>
-				<key>Detail</key>
-				<string>“Only One” (feat. Paul McCartney) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>How you gon’ be mad on vacation?</string>
-				<key>Detail</key>
-				<string>“Bound 2” (Ft. Charlie Wilson) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>No sins as long as there’s permission</string>
-				<key>Detail</key>
-				<string>“No Church in the Wild” (Feat. Frank Ocean &amp; Jay Z) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I don’t need pussy I’m on my own dick</string>
-				<key>Detail</key>
-				<string>“Power” (Ft. Dwele) - Kanye West</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>Category</key>
-		<string>Based</string>
-		<key>Content</key>
-		<array>
-			<dict>
-				<key>Lyric</key>
-				<string>Allow Myself to Introduce Myself</string>
-				<key>Detail</key>
-				<string>“The New Workout Plan” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I am a God</string>
-				<key>Detail</key>
-				<string>“I am a God” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>Hurry up with my damn croissants</string>
-				<key>Detail</key>
-				<string>“I am a God” - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I still think I am the greatest</string>
+				<string>I’m too busy writing history to read it</string>
 				<key>Detail</key>
 				<string>-Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I don’t know what’s better gettin’ laid or gettin’ paid</string>
+				<string>Photo shoot fresh, lookin’ like wealth
+I’m bout to call the paparazzi on myself</string>
 				<key>Detail</key>
-				<string>“This Way” (Ft. Kanye West) - Dilated Peoples</string>
+				<string>“Otis” (Ft. Jay Z) - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>My style is sex in the shower, fresh as fuck</string>
-				<key>Detail</key>
-				<string>“Diamonds” Remix (Ft. Kanye West) - Rihanna</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>Category</key>
-		<string>Straight Fire</string>
-		<key>Content</key>
-		<array>
-			<dict>
-				<key>Lyric</key>
-				<string>I just spent that on a necklace</string>
+				<string>I just spent that on a necklace.</string>
 				<key>Detail</key>
 				<string>“Can’t Tell Me Nothing” - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I’d rather be a dick than a swallower</string>
+				<string>I don’t need pussy I’m on my own dick.</string>
 				<key>Detail</key>
-				<string>“New Slaves” - Kanye West</string>
+				<string>“Power” (Ft. Dwele) - Kanye West</string>
 			</dict>
+		</array>
+		<key>Color</key>
+		<dict>
+			<key>R</key>
+			<integer>0</integer>
+			<key>G</key>
+			<integer>255</integer>
+			<key>B</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>Category</key>
+		<string>Relationships</string>
+		<key>Content</key>
+		<array>
 			<dict>
 				<key>Lyric</key>
-				<string>No you’re not perfect but you’re not your mistakes</string>
-				<key>Detail</key>
-				<string>“Only One” (feat. Paul McCartney) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>How you gon’ be mad on vacation?</string>
-				<key>Detail</key>
-				<string>“Bound 2” (Ft. Charlie Wilson) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>No sins as long as there’s permission</string>
+				<string>Your love is my scriptureLet me into your encryption</string>
 				<key>Detail</key>
 				<string>“No Church in the Wild” (Feat. Frank Ocean &amp; Jay Z) - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I don’t need pussy I’m on my own dick</string>
+				<string>You got the world cause you got the love in your hands</string>
 				<key>Detail</key>
-				<string>“Power” (Ft. Dwele) - Kanye West</string>
+				<string>“Only One” (Feat. Paul McCartney) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Deception is the only felonySo never fuck nobody wit’out tellin’ me</string>
+				<key>Detail</key>
+				<string>“No Church in the Wild” (Feat. Frank Ocean &amp; Jay Z) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>The prettiest people do the ugliest things</string>
+				<key>Detail</key>
+				<string>“All Falls Down” (Ft. Syleena Johnson) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>The plan was to drink until the pain overBut what’s worse, the pain or the hangover?</string>
+				<key>Detail</key>
+				<string>“Dark Fantasy” - Kanye West</string>
 			</dict>
 		</array>
+		<key>Color</key>
+		<dict>
+			<key>R</key>
+			<integer>0</integer>
+			<key>G</key>
+			<integer>0</integer>
+			<key>B</key>
+			<integer>255</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>Category</key>
+		<string>Motivation</string>
+		<key>Content</key>
+		<array>
+			<dict>
+				<key>Lyric</key>
+				<string>Eat your salad no dessert</string>
+				<key>Detail</key>
+				<string>“The New Workout Plan” - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>No you’re not perfect but you’re not your mistakes</string>
+				<key>Detail</key>
+				<string>“Only One” (Ft. Paul McCartney) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Oh the good outweighs the bad even on your worst day</string>
+				<key>Detail</key>
+				<string>“Only One” (Ft. Paul McCartney) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Would you believe in what you believe in if you were the only one to believe it?</string>
+				<key>Detail</key>
+				<string>-Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Keep your nose to the sky, keep your heart to god, and keep your face to the rising sun</string>
+				<key>Detail</key>
+				<string>“Family Business” - Kanye West</string>
+			</dict>
+		</array>
+		<key>Color</key>
+		<dict>
+			<key>R</key>
+			<integer>255</integer>
+			<key>G</key>
+			<integer>255</integer>
+			<key>B</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>Category</key>
+		<string>Wisdom</string>
+		<key>Content</key>
+		<array>
+			<dict>
+				<key>Lyric</key>
+				<string>Nothing in life is promised except death</string>
+				<key>Detail</key>
+				<string>-Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Remember who you are</string>
+				<key>Detail</key>
+				<string>“Only One” (Ft. Paul McCartney) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>If you fall on concrete, that’s yo ass fault.</string>
+				<key>Detail</key>
+				<string>“See Me Now” (Ft. Beyoncé, Big Sean &amp; Charlie Wilson) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Pray that all of their pain be champagne.</string>
+				<key>Detail</key>
+				<string>“Otis” (Ft. Jay Z) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>We all self conscious, I’m just the first one to admit it.</string>
+				<key>Detail</key>
+				<string>“All Falls Down” (Ft. Syleena Johnson) - Kanye West</string>
+			</dict>
+		</array>
+		<key>Color</key>
+		<dict>
+			<key>R</key>
+			<integer>255</integer>
+			<key>G</key>
+			<integer>0</integer>
+			<key>B</key>
+			<integer>255</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>Category</key>
+		<string>Lust</string>
+		<key>Content</key>
+		<array>
+			<dict>
+				<key>Lyric</key>
+				<string>I wanna fuck you hard on the sink
+after that give you somethin’ to drink</string>
+				<key>Detail</key>
+				<string>“Bound 2” (Ft. Charlie Wilson) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Get you super wet after we turn the shower off</string>
+				<key>Detail</key>
+				<string>“I’m In It” (Ft. Assassin &amp; Justin Vernon) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Eatin’ Asian pussy all I need is sweet &amp; sour sauce.</string>
+				<key>Detail</key>
+				<string>“I’m In It” (Ft. Assassin &amp; Justin Vernon) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>Black dick all in your spouse again</string>
+				<key>Detail</key>
+				<string>“On Sight” - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>I put my fist in her like a civil rights sign.</string>
+				<key>Detail</key>
+				<string>“I’m In It” (Ft. Assassin &amp; Justin Vernon) - Kanye West</string>
+			</dict>
+		</array>
+		<key>Color</key>
+		<dict>
+			<key>R</key>
+			<integer>0</integer>
+			<key>G</key>
+			<integer>255</integer>
+			<key>B</key>
+			<integer>255</integer>
+		</dict>
 	</dict>
 </array>
 </plist>
