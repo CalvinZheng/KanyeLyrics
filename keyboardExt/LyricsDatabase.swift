@@ -54,6 +54,11 @@ class LyricsDatabase: NSObject
         return ""
     }
     
+    func titleForSelectedGroup() -> String
+    {
+        return self.titleForGroup(self.selectedGroupIndex)
+    }
+    
     func selectedGroupContent() -> [[String:String]]
     {
         if let content = self.dataArray[self.selectedGroupIndex]["Content"] as? [[String:String]]

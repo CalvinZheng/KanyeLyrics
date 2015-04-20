@@ -15,8 +15,15 @@ protocol LyricsTableControllerDelegate
 
 class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelegate, NSObjectProtocol
 {
+    var tableView: UITableView?
     var delegate: LyricsTableControllerDelegate?
     var expandedIndex: Int?
+    
+    func reset()
+    {
+        self.expandedIndex = nil
+        self.tableView?.reloadData()
+    }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
@@ -26,6 +33,18 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return LyricsDatabase.sharedInstance.selectedGroupContent().count + (expandedIndex != nil ? 1 : 0)
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
+        if indexPath.row-1 == self.expandedIndex
+        {
+            return 36
+        }
+        else
+        {
+            return 44
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell

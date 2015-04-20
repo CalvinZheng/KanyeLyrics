@@ -6,7 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="keyboardExt" customModuleProvider="target">
             <connections>
+                <outlet property="groupSelectionScrollView" destination="uUY-b1-jbp" id="ylZ-O9-ZlS"/>
                 <outlet property="lyricsTableView" destination="xAR-tu-g9R" id="uLL-kr-fHd"/>
+                <outlet property="scrollViewHeightConstraint" destination="PdV-lY-VlU" id="PVr-NI-bhw"/>
+                <outlet property="scrollViewTopConstraint" destination="l8F-QC-3gA" id="7d1-ct-Mie"/>
+                <outlet property="titleContainerView" destination="dmO-kf-ZrV" id="vry-yk-o3f"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -14,13 +18,16 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUY-b1-jbp">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
-                </scrollView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-tu-g9R">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUY-b1-jbp">
+                    <rect key="frame" x="0.0" y="176" width="320" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="PdV-lY-VlU"/>
+                    </constraints>
+                </scrollView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmO-kf-ZrV" userLabel="TitleContainerView">
                     <rect key="frame" x="0.0" y="176" width="320" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -89,6 +96,11 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="l8F-QC-3gA"/>
+                </mask>
+            </variation>
         </view>
     </objects>
     <resources>
