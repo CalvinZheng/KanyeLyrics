@@ -49,9 +49,9 @@
 			<key>R</key>
 			<integer>255</integer>
 			<key>G</key>
-			<integer>0</integer>
+			<integer>150</integer>
 			<key>B</key>
-			<integer>0</integer>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -148,11 +148,11 @@ I’m bout to call the paparazzi on myself</string>
 		<key>Color</key>
 		<dict>
 			<key>R</key>
-			<integer>0</integer>
+			<integer>150</integer>
 			<key>G</key>
 			<integer>255</integer>
 			<key>B</key>
-			<integer>0</integer>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -194,9 +194,9 @@ I’m bout to call the paparazzi on myself</string>
 		<key>Color</key>
 		<dict>
 			<key>R</key>
-			<integer>0</integer>
+			<integer>150</integer>
 			<key>G</key>
-			<integer>0</integer>
+			<integer>150</integer>
 			<key>B</key>
 			<integer>255</integer>
 		</dict>
@@ -244,7 +244,7 @@ I’m bout to call the paparazzi on myself</string>
 			<key>G</key>
 			<integer>255</integer>
 			<key>B</key>
-			<integer>0</integer>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<dict>
@@ -288,7 +288,7 @@ I’m bout to call the paparazzi on myself</string>
 			<key>R</key>
 			<integer>255</integer>
 			<key>G</key>
-			<integer>0</integer>
+			<integer>150</integer>
 			<key>B</key>
 			<integer>255</integer>
 		</dict>
@@ -333,7 +333,7 @@ after that give you somethin’ to drink</string>
 		<key>Color</key>
 		<dict>
 			<key>R</key>
-			<integer>0</integer>
+			<integer>150</integer>
 			<key>G</key>
 			<integer>255</integer>
 			<key>B</key>
