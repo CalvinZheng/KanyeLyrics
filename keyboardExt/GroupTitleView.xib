@@ -12,11 +12,11 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQS-ta-uNP">
                     <rect key="frame" x="40" y="0.0" width="240" height="40"/>
-                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                     <size key="titleShadowOffset" width="1" height="1"/>
                     <state key="normal" title="Straight Fire">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="titleTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="PW2-st-Pbz"/>

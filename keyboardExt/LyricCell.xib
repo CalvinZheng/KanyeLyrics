@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,19 +14,32 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGb-XN-PJD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <rect key="frame" x="0.0" y="0.0" width="296" height="43"/>
                         <string key="text">Your love is my scripture
 Let me into your encryption</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M5-X3-gRY">
+                        <rect key="frame" x="296" y="0.0" width="24" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="7Il-3Y-lts"/>
+                        </constraints>
+                        <state key="normal" image="star.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="starS.png"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="uGb-XN-PJD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8A5-Rp-Fbr"/>
-                    <constraint firstAttribute="trailing" secondItem="uGb-XN-PJD" secondAttribute="trailing" id="NnM-cZ-T34"/>
+                    <constraint firstItem="4M5-X3-gRY" firstAttribute="height" secondItem="uGb-XN-PJD" secondAttribute="height" id="A0t-Q2-QjM"/>
                     <constraint firstAttribute="bottom" secondItem="uGb-XN-PJD" secondAttribute="bottom" id="OEY-TU-XCq"/>
+                    <constraint firstAttribute="trailing" secondItem="4M5-X3-gRY" secondAttribute="trailing" id="YSi-q1-MvA"/>
+                    <constraint firstAttribute="centerY" secondItem="4M5-X3-gRY" secondAttribute="centerY" id="YfO-in-TZq"/>
                     <constraint firstItem="uGb-XN-PJD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c7M-xv-YEG"/>
+                    <constraint firstItem="4M5-X3-gRY" firstAttribute="leading" secondItem="uGb-XN-PJD" secondAttribute="trailing" id="yTK-vz-cUe"/>
                 </constraints>
             </tableViewCellContentView>
             <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -35,4 +48,8 @@ Let me into your encryption</string>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="star.png" width="16" height="16"/>
+        <image name="starS.png" width="64" height="64"/>
+    </resources>
 </document>

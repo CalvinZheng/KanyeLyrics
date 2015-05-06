@@ -28,6 +28,7 @@ class GroupSelectionController: NSObject, GroupTitleViewDelegate
             {
                 aTitleView.titleButton.setTitle(LyricsDatabase.sharedInstance.titleForGroup(i), forState: UIControlState.Normal)
                 aTitleView.backgroundColor = LyricsDatabase.sharedInstance.colorForGroup(i)
+//                aTitleView.titleButton.setTitleColor(LyricsDatabase.sharedInstance.colorForGroup(i), forState: UIControlState.Normal)
                 aTitleView.delegate = self
                 
                 views.append(aTitleView)
@@ -46,7 +47,7 @@ class GroupSelectionController: NSObject, GroupTitleViewDelegate
     {
         if let scrollView = self.scrollView
         {
-            scrollView.contentSize = CGSize(width: scrollView.bounds.size.width, height: CGFloat(self.allTitleViews.count) * self.allTitleViews[0].frame.size.height)
+            scrollView.contentSize = CGSize(width: 0, height: CGFloat(self.allTitleViews.count) * self.allTitleViews[0].frame.size.height)
             var top: CGFloat = 0
             for aTitleView in self.allTitleViews
             {
