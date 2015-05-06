@@ -50,6 +50,6 @@ Let me into your encryption</string>
     </objects>
     <resources>
         <image name="star.png" width="16" height="16"/>
-        <image name="starS.png" width="64" height="64"/>
+        <image name="starS.png" width="16" height="16"/>
     </resources>
 </document>
