@@ -13,18 +13,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGb-XN-PJD">
-                        <rect key="frame" x="0.0" y="0.0" width="296" height="43"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uGb-XN-PJD">
+                        <rect key="frame" x="24" y="0.0" width="272" height="43"/>
                         <string key="text">Your love is my scripture
 Let me into your encryption</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M5-X3-gRY">
-                        <rect key="frame" x="296" y="0.0" width="24" height="43"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M5-X3-gRY">
+                        <rect key="frame" x="288" y="0.0" width="32" height="43"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="24" id="7Il-3Y-lts"/>
+                            <constraint firstAttribute="width" constant="32" id="7Il-3Y-lts"/>
                         </constraints>
                         <state key="normal" image="star.png">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,8 +38,8 @@ Let me into your encryption</string>
                     <constraint firstAttribute="bottom" secondItem="uGb-XN-PJD" secondAttribute="bottom" id="OEY-TU-XCq"/>
                     <constraint firstAttribute="trailing" secondItem="4M5-X3-gRY" secondAttribute="trailing" id="YSi-q1-MvA"/>
                     <constraint firstAttribute="centerY" secondItem="4M5-X3-gRY" secondAttribute="centerY" id="YfO-in-TZq"/>
-                    <constraint firstItem="uGb-XN-PJD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="c7M-xv-YEG"/>
-                    <constraint firstItem="4M5-X3-gRY" firstAttribute="leading" secondItem="uGb-XN-PJD" secondAttribute="trailing" id="yTK-vz-cUe"/>
+                    <constraint firstAttribute="centerX" secondItem="uGb-XN-PJD" secondAttribute="centerX" id="bnF-9L-GTF"/>
+                    <constraint firstItem="4M5-X3-gRY" firstAttribute="leading" secondItem="uGb-XN-PJD" secondAttribute="trailing" constant="-8" id="yTK-vz-cUe"/>
                 </constraints>
             </tableViewCellContentView>
             <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
