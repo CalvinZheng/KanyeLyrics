@@ -27,6 +27,12 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
         self.tableView?.contentOffset = CGPoint.zeroPoint
     }
     
+    func prepareForDisplay()
+    {
+        self.tableView?.registerNib(UINib(nibName: "LyricCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "LyricCell")
+        self.tableView?.registerNib(UINib(nibName: "LyricDetailCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "LyricDetailCell")
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         return 1
@@ -53,12 +59,7 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
     {
         if indexPath.row-1 == self.expandedIndex
         {
-            if let aCell = tableView.dequeueReusableCellWithIdentifier("LyricDetailCell") as? LyricDetailCell
-            {
-                aCell.detailLabel.text = LyricsDatabase.sharedInstance.lyricDetail(self.expandedIndex!)
-                return aCell
-            }
-            else if let aCell = NSBundle.mainBundle().loadNibNamed("LyricDetailCell", owner: self, options: nil)[0] as? LyricDetailCell
+            if let aCell = tableView.dequeueReusableCellWithIdentifier("LyricDetailCell", forIndexPath: indexPath) as? LyricDetailCell
             {
                 aCell.detailLabel.text = LyricsDatabase.sharedInstance.lyricDetail(self.expandedIndex!)
                 return aCell
@@ -77,14 +78,10 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
                 index--
             }
             
-            if let aCell = tableView.dequeueReusableCellWithIdentifier("LyricCell") as? LyricCell
+            if let aCell = tableView.dequeueReusableCellWithIdentifier("LyricCell", forIndexPath: indexPath) as? LyricCell
             {
                 aCell.lyricLabel.text = LyricsDatabase.sharedInstance.lyric(index)
-                return aCell
-            }
-            else if let aCell = NSBundle.mainBundle().loadNibNamed("LyricCell", owner: self, options: nil)[0] as? LyricCell
-            {
-                aCell.lyricLabel.text = LyricsDatabase.sharedInstance.lyric(index)
+                aCell.starButton.selected = LyricsDatabase.sharedInstance.isFav(index)
                 return aCell
             }
             else

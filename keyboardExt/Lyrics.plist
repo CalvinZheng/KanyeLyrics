@@ -8,40 +8,28 @@
 		<key>Content</key>
 		<array>
 			<dict>
-				<key>Lyric</key>
-				<string>I just spent that on a necklace</string>
-				<key>Detail</key>
-				<string>“Can’t Tell Me Nothing” - Kanye West</string>
+				<key>Group</key>
+				<integer>1</integer>
+				<key>Item</key>
+				<integer>12</integer>
 			</dict>
 			<dict>
-				<key>Lyric</key>
-				<string>I’d rather be a dick than a swallower</string>
-				<key>Detail</key>
-				<string>“New Slaves” - Kanye West</string>
+				<key>Group</key>
+				<integer>1</integer>
+				<key>Item</key>
+				<integer>7</integer>
 			</dict>
 			<dict>
-				<key>Lyric</key>
-				<string>No you’re not perfect but you’re not your mistakes</string>
-				<key>Detail</key>
-				<string>“Only One” (feat. Paul McCartney) - Kanye West</string>
+				<key>Group</key>
+				<integer>3</integer>
+				<key>Item</key>
+				<integer>1</integer>
 			</dict>
 			<dict>
-				<key>Lyric</key>
-				<string>How you gon’ be mad on vacation?</string>
-				<key>Detail</key>
-				<string>“Bound 2” (Ft. Charlie Wilson) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>No sins as long as there’s permission</string>
-				<key>Detail</key>
-				<string>“No Church in the Wild” (Feat. Frank Ocean &amp; Jay Z) - Kanye West</string>
-			</dict>
-			<dict>
-				<key>Lyric</key>
-				<string>I don’t need pussy I’m on my own dick</string>
-				<key>Detail</key>
-				<string>“Power” (Ft. Dwele) - Kanye West</string>
+				<key>Group</key>
+				<integer>1</integer>
+				<key>Item</key>
+				<integer>13</integer>
 			</dict>
 		</array>
 		<key>Color</key>

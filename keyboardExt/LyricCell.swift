@@ -11,6 +11,7 @@ import UIKit
 class LyricCell: UITableViewCell
 {
     @IBOutlet var lyricLabel: UILabel!
+    @IBOutlet var starButton: UIButton!
 
     override func awakeFromNib()
     {

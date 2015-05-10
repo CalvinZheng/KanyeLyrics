@@ -68,6 +68,7 @@ class KeyboardViewController: UIInputViewController, LyricsTableControllerDelega
         self.lyricsTableController.tableView = self.lyricsTableView
         self.lyricsTableView.delegate = self.lyricsTableController
         self.lyricsTableView.dataSource = self.lyricsTableController
+        self.lyricsTableController.prepareForDisplay()
         
         self.groupTitleView = NSBundle.mainBundle().loadNibNamed("GroupTitleView", owner: self, options: nil)[0] as! GroupTitleView
         self.groupTitleView.titleButton.setTitle(LyricsDatabase.sharedInstance.titleForSelectedGroup(), forState: UIControlState.Normal)
