@@ -82,12 +82,46 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
             {
                 aCell.lyricLabel.text = LyricsDatabase.sharedInstance.lyric(index)
                 aCell.starButton.selected = LyricsDatabase.sharedInstance.isFav(index)
+                aCell.starButton.addTarget(self, action: "starTapped:", forControlEvents: UIControlEvents.TouchUpInside)
                 return aCell
             }
             else
             {
                 assertionFailure("NoCellFound")
                 return UITableViewCell()
+            }
+        }
+    }
+    
+    func starTapped(sender: UIButton)
+    {
+        for aCell in self.tableView!.visibleCells()
+        {
+            if let aLyricCell = aCell as? LyricCell
+            {
+                if aLyricCell.starButton == sender
+                {
+                    if let indexPath = self.tableView?.indexPathForCell(aLyricCell)
+                    {
+                        var row = indexPath.row
+                        if self.expandedIndex != nil && row > self.expandedIndex!+1
+                        {
+                            row--
+                        }
+                        LyricsDatabase.sharedInstance.switchFavState(row)
+                        
+                        if LyricsDatabase.sharedInstance.isInFavGroup()
+                        {
+                            self.tableView?.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Top)
+                        }
+                        else
+                        {
+                            self.tableView?.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+                        }
+                    }
+                    
+                    return
+                }
             }
         }
     }
@@ -102,6 +136,7 @@ class LyricsTableController : NSObject, UITableViewDataSource, UITableViewDelega
             {
                 self.expandedIndex = nil
                 tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: index+1, inSection: indexPath.section)], withRowAnimation: UITableViewRowAnimation.Top)
+                tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: index, inSection: indexPath.section), atScrollPosition: UITableViewScrollPosition.None, animated: true)
             }
             else if indexPath.row == index+1
             {

@@ -151,9 +151,21 @@ class LyricsDatabase: NSObject
         return ""
     }
     
-    func isFav(indexInSelectedGroup: Int) -> Bool
+    func isInFavGroup() -> Bool
     {
         if self.selectedGroupIndex == 0
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+    
+    func isFav(indexInSelectedGroup: Int) -> Bool
+    {
+        if self.isInFavGroup()
         {
             return true
         }
@@ -178,7 +190,12 @@ class LyricsDatabase: NSObject
     
     func switchFavState(indexInSelectedGroup: Int)
     {
-        if self.isFav(indexInSelectedGroup)
+        if self.isInFavGroup()
+        {
+            self.favIndexData.removeAtIndex(indexInSelectedGroup)
+            self.saveFavData()
+        }
+        else if self.isFav(indexInSelectedGroup)
         {
             for (i, anIndex) in enumerate(self.favIndexData)
             {
