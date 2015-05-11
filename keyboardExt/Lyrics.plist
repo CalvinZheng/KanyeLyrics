@@ -69,7 +69,7 @@
 				<key>Lyric</key>
 				<string>I still think I am the greatest</string>
 				<key>Detail</key>
-				<string>-Kanye West</string>
+				<string>- Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
@@ -87,23 +87,23 @@
 				<key>Lyric</key>
 				<string>Nobody can tell me where I can and can’t go</string>
 				<key>Detail</key>
-				<string>-Kanye West</string>
+				<string>- Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I’d rather be a dick than a swallower.</string>
+				<string>I’d rather be a dick than a swallower</string>
 				<key>Detail</key>
 				<string>“New Slaves” (Ft. Frank Ocean) - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>man I miss myself</string>
+				<string>Man I miss myself</string>
 				<key>Detail</key>
 				<string>“Diamonds” Remix (Ft. Kanye West) - Rihanna</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>this is my day.</string>
+				<string>This is my day</string>
 				<key>Detail</key>
 				<string>“Can’t Tell Me Nothing” - Kanye West</string>
 			</dict>
@@ -111,7 +111,7 @@
 				<key>Lyric</key>
 				<string>I’m too busy writing history to read it</string>
 				<key>Detail</key>
-				<string>-Kanye West</string>
+				<string>- Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
@@ -122,15 +122,21 @@ I’m bout to call the paparazzi on myself</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I just spent that on a necklace.</string>
+				<string>I just spent that on a necklace</string>
 				<key>Detail</key>
 				<string>“Can’t Tell Me Nothing” - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I don’t need pussy I’m on my own dick.</string>
+				<string>I don’t need pussy I’m on my own dick</string>
 				<key>Detail</key>
 				<string>“Power” (Ft. Dwele) - Kanye West</string>
+			</dict>
+			<dict>
+				<key>Lyric</key>
+				<string>I&apos;m the reason everybody fired up this evening</string>
+				<key>Detail</key>
+				<string>&quot;Amazing&quot; (Ft. Jeezy) - Kanye West</string>
 			</dict>
 		</array>
 		<key>Color</key>
@@ -219,7 +225,7 @@ But what’s worse, the pain or the hangover?</string>
 				<key>Lyric</key>
 				<string>Would you believe in what you believe in if you were the only one to believe it?</string>
 				<key>Detail</key>
-				<string>-Kanye West</string>
+				<string>- Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
@@ -247,7 +253,7 @@ But what’s worse, the pain or the hangover?</string>
 				<key>Lyric</key>
 				<string>Nothing in life is promised except death</string>
 				<key>Detail</key>
-				<string>-Kanye West</string>
+				<string>- Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
@@ -257,19 +263,19 @@ But what’s worse, the pain or the hangover?</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>If you fall on concrete, that’s yo ass fault.</string>
+				<string>If you fall on concrete, that’s yo ass fault</string>
 				<key>Detail</key>
 				<string>“See Me Now” (Ft. Beyoncé, Big Sean &amp; Charlie Wilson) - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>Pray that all of their pain be champagne.</string>
+				<string>Pray that all of their pain be champagne</string>
 				<key>Detail</key>
 				<string>“Otis” (Ft. Jay Z) - Kanye West</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>We all self conscious, I’m just the first one to admit it.</string>
+				<string>We all self conscious, I’m just the first one to admit it</string>
 				<key>Detail</key>
 				<string>“All Falls Down” (Ft. Syleena Johnson) - Kanye West</string>
 			</dict>
@@ -286,7 +292,7 @@ But what’s worse, the pain or the hangover?</string>
 	</dict>
 	<dict>
 		<key>Category</key>
-		<string>Lust</string>
+		<string>Talk Dirty To Me</string>
 		<key>Content</key>
 		<array>
 			<dict>
@@ -304,7 +310,7 @@ after that give you somethin’ to drink</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>Eatin’ Asian pussy all I need is sweet &amp; sour sauce.</string>
+				<string>Eatin’ Asian pussy all I need is sweet &amp; sour sauce</string>
 				<key>Detail</key>
 				<string>“I’m In It” (Ft. Assassin &amp; Justin Vernon) - Kanye West</string>
 			</dict>
@@ -316,7 +322,7 @@ after that give you somethin’ to drink</string>
 			</dict>
 			<dict>
 				<key>Lyric</key>
-				<string>I put my fist in her like a civil rights sign.</string>
+				<string>I put my fist in her like a civil rights sign</string>
 				<key>Detail</key>
 				<string>“I’m In It” (Ft. Assassin &amp; Justin Vernon) - Kanye West</string>
 			</dict>
